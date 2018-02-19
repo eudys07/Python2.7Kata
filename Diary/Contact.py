@@ -41,5 +41,5 @@ class Contact:
 			print 'There is not contact to show'
 		else:
 			for contact in self.contacs_list:
-				print contact
-				print 'Full name:{0} {1} and age: {2}'.format(contact.name, contact.lastname, contact.age)
+				#print contact
+				print 'Full name:{0} {1} and age: {2}'.format(contact['name'], contact['lastname'], contact['age'])

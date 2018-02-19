@@ -31,7 +31,7 @@ class Main:
 		age = raw_input()
 
 		print 'Full name:{0} {1} and age: {2}'.format(name, lastname, age)
-		self.contact = Contact()
+		self.contact = Contact(name, lastname, age)
 		#self.contact = Contact(name, lastname, age)
 
 		
