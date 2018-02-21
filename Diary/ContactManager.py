@@ -2,22 +2,37 @@ from Contact import Contact
 
 class ContactManager:
 
+
 	def __init__(self):
 		self.contact = Contact()
 
-	def add_contact(self):		
-		self.ask_contact_info()
-		self.contact.add()
-		print
-		self.show_menu()
 
 	def show_contacts(self):
 		self.contact.show()
 		print
 		self.show_menu()
 
-	def ask_contact_info(self):
-		
+
+	def add_contact(self):
+		self.ask_contact_info()
+		self.contact.add()
+		print
+		self.show_menu()
+
+
+	def edit_contact(self):
+		print 'Please type the contact Id That You Would like to edit:'
+		contact_id = raw_input()
+		self.contact.edit(contact_id);
+
+
+	def delete_contact(self):
+		print 'Please type the contact Id That You Would like to delete:'
+		contact_id = raw_input()
+		self.contact.edit(contact_id);
+
+
+	def ask_contact_info(self):		
 		print 'Please type your name: '
 		name = raw_input()
 		print 'Please type your lastname: '
@@ -26,16 +41,22 @@ class ContactManager:
 		age = raw_input()
 
 		print 'Full name:{0} {1} and age: {2}'.format(name, lastname, age)
-		self.contact = Contact(name, lastname, age)
-		#self.contact = Contact(name, lastname, age)		
+		self.contact = Contact(name, lastname, age)		
+
 
 	def show_menu(self):
 		print 'please choose one option:' 
-		print '1 - Add Contact' 
-		print '2 - Show contacts' 
+		print '1 - Show contacts' 
+		print '2 - Add Contact' 
+		print '3 - edit contacts' 
+		print '4 - delete contacts' 
 		user_choosed = raw_input()		
 
-		if user_choosed == '1':
-			self.add_contact()
-		elif user_choosed == '2':
+		if user_choosed == '2':
 			self.show_contact()
+		elif user_choosed == '1':
+			self.add_contact()
+		elif user_choosed == '3':
+			self.edit_contact()
+		elif user_choosed == '4':
+			self.delete_contact()
