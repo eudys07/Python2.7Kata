@@ -43,3 +43,11 @@ class Contact:
 			for contact in self.contacs_list:
 				#print contact
 				print 'Full name:{0} {1} and age: {2}'.format(contact['name'], contact['lastname'], contact['age'])
+
+
+	def edit(self, id):
+		
+
+
+	def delete(self, id):
+		
