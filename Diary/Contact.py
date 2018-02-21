@@ -1,53 +1,56 @@
 class Contact:
 
+	contact_id = ''
 	name = ''
 	lastname = ''
 	age = ''
-	contacs_list = []
+	contacts = []
 
 	def __init__(self, *att):
 
 		if len(att) > 0:
-			contact_data = list(att)
+			contact_list = list(att)
 
-			self.name = contact_data[0]
-			self.lastname = contact_data[1]
-			self.age = contact_data[2]
+			self.contact_id = contact_list[0]
+			self.name = contact_list[1]
+			self.lastname = contact_list[2]
+			self.age = contact_list[3]
 		
 			print 'attributes well setted' 
 
 
-	def add(self, name, lastname, age):
+	def add(self):
 		
 		print 'attributes'
-		print name
-		print lastname
-		print age
+		print self.contact_id
+		print self.name
+		print self.lastname
+		print self.age
 		contact_obj = {
-			'name': name,
-			'lastname': lastname,
-			'age': age
+			'contact_id': self.contact_id,
+			'name': self.name,
+			'lastname': self.lastname,
+			'age': self.age
 		}
 
 		print 'Printing contact dict'
 		print contact_obj
-		self.contacs_list.append(contact_obj)
+		self.contacts.append(contact_obj)
 
 
 
 	def show(self):
 
-		if len(self.contacs_list) <=0 :
+		if len(self.contacts) <=0 :
 			print 'There is not contact to show'
 		else:
-			for contact in self.contacs_list:
+			for contact in self.contacts:
 				#print contact
 				print 'Full name:{0} {1} and age: {2}'.format(contact['name'], contact['lastname'], contact['age'])
 
 
 	def edit(self, id):
-		
+
 
 
 	def delete(self, id):
-		
