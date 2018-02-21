@@ -26,7 +26,7 @@ class Contact:
 		print self.name
 		print self.lastname
 		print self.age
-		contact_obj = {
+		contact = {
 			'contact_id': self.contact_id,
 			'name': self.name,
 			'lastname': self.lastname,
@@ -34,8 +34,8 @@ class Contact:
 		}
 
 		print 'Printing contact dict'
-		print contact_obj
-		self.contacts.append(contact_obj)
+		print contact
+		self.contacts.append(contact)
 
 
 

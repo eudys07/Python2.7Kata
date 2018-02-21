@@ -1,6 +1,6 @@
 from Contact import Contact 
 
-class ContactController:
+class ContactManager:
 
 	def __init__(self):
 		self.contact = Contact()
@@ -11,7 +11,7 @@ class ContactController:
 		print
 		self.show_menu()
 
-	def show_contact(self):
+	def show_contacts(self):
 		self.contact.show()
 		print
 		self.show_menu()
@@ -33,9 +33,9 @@ class ContactController:
 		print 'please choose one option:' 
 		print '1 - Add Contact' 
 		print '2 - Show contacts' 
-		choosed = raw_input()		
+		user_choosed = raw_input()		
 
-		if choosed == '1':
+		if user_choosed == '1':
 			self.add_contact()
-		elif choosed == '2':
+		elif user_choosed == '2':
 			self.show_contact()

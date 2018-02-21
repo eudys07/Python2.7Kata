@@ -1,9 +1,9 @@
-from ContactController import ContactController 
+from ContactManager import ContactManager 
 
 
 if __name__== "__main__":
 	 
-	contactCtrl = ContactController()	
-	contactCtrl.show_menu()
+	contactMngr = ContactManager.ContactManager()	
+	contactMngr.show_menu()
 	
 
