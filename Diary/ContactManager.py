@@ -23,16 +23,24 @@ class ContactManager:
 	def edit_contact(self):
 		print 'Please type the contact Id That You Would like to edit:'
 		contact_id = raw_input()
-		self.contact.edit(contact_id);
+		if contact_id.isdigit() :
+			self.contact.edit(contact_id);
+		else:
+			print 'Please try to type a number instead'
 
 
 	def delete_contact(self):
 		print 'Please type the contact Id That You Would like to delete:'
 		contact_id = raw_input()
-		self.contact.edit(contact_id);
+		if contact_id.isdigit() :
+			self.contact.delete(contact_id);
+		else:
+			print 'Please try to type a number instead'
 
 
 	def ask_contact_info(self):		
+		print 'Please type your ID: '
+		contact_id = raw_input()
 		print 'Please type your name: '
 		name = raw_input()
 		print 'Please type your lastname: '
@@ -40,8 +48,8 @@ class ContactManager:
 		print 'Please type your age: '
 		age = raw_input()
 
-		print 'Full name:{0} {1} and age: {2}'.format(name, lastname, age)
-		self.contact = Contact(name, lastname, age)		
+		print 'Full name:{0} {1} and age: {2}'.format(contact_id, name, lastname, age)
+		self.contact = Contact(contact_id, name, lastname, age)		
 
 
 	def show_menu(self):
@@ -52,9 +60,9 @@ class ContactManager:
 		print '4 - delete contacts' 
 		user_choosed = raw_input()		
 
-		if user_choosed == '2':
-			self.show_contact()
-		elif user_choosed == '1':
+		if user_choosed == '1':
+			self.show_contacts()
+		elif user_choosed == '2':
 			self.add_contact()
 		elif user_choosed == '3':
 			self.edit_contact()

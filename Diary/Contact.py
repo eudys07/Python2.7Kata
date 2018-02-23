@@ -43,12 +43,11 @@ class Contact:
 			print 'There is not contact to show'
 		else:
 			for contact in self.contacts:
-				#print contact
-				print 'Full name:{0} {1} and age: {2}'.format(contact['name'], contact['lastname'], contact['age'])
+				print 'The Contact Id {0} named {1}{2} and age{3} is here'.format(contact['contact_id'], contact['name'], contact['lastname'], contact['age'])
 
 
 	def edit(self, contact_id):
-		contact = self.contact_id['contact_id']
+		contact = self.contacts['contact_id']
 		print 
 		print contact_id
 		print 
