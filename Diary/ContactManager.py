@@ -60,11 +60,16 @@ class ContactManager:
 
 
 	def show_menu(self):
-		print 'please choose one option:' 
-		print '1 - Show contacts' 
-		print '2 - Add Contact' 
-		print '3 - edit contacts' 
-		print '4 - delete contacts' 
+		print "----------------------------------------------"
+		print "--------------MAIN MENU-----------------------"
+		print "-----------1-Show Contacts--------------------"
+		print "-----------2-Add Contact----------------------"
+		print "-----------3-Edit Contact---------------------"
+		print "-----------4-Delete Contact-------------------"
+		print "-----------5-Salir del sistema----------------"
+		print "----------------------------------------------"
+		print ">>Please choose your options"
+		print "----------------------------------------------"
 		user_choosed = raw_input()		
 
 		if user_choosed == '1':
