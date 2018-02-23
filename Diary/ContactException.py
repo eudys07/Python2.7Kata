@@ -1,4 +1,7 @@
-class ContactExceptions(DiaryBaseExceptions):
+from DiaryBaseException import DiaryBaseException
+
+class ContactException(DiaryBaseException):
+	pass
 	
 	def show_unfound():
 		print 'Conctact does not exist.'

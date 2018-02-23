@@ -1,4 +1,5 @@
-from Contact import Contact 
+from Contact import Contact
+from ContactException import ContactException
 
 class ContactManager:
 
@@ -21,13 +22,19 @@ class ContactManager:
 
 
 	def edit_contact(self):
-		print 'Please type the contact Id That You Would like to edit:'
-		contact_id = raw_input()
-		if contact_id.isdigit() :
-			self.contact.edit(contact_id);
-		else:
-			print 'Please try to type a number instead'
+		try :
+			print 'Please type the contact Id That You Would like to edit:'
+			contact_id = raw_input()
+			if contact_id.isdigit() :
+				self.contact.edit(contact_id);
+			else:
+				print 'Please try to type a number instead'
 
+		except ContactException as ex:
+			raise ContactException
+		except Exception as e:
+			raise ContactException 
+		
 
 	def delete_contact(self):
 		print 'Please type the contact Id That You Would like to delete:'
@@ -68,3 +75,5 @@ class ContactManager:
 			self.edit_contact()
 		elif user_choosed == '4':
 			self.delete_contact()
+
+
