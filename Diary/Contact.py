@@ -41,7 +41,7 @@ class Contact:
 
 
 	def edit(self, contact_id):
-		#self.contacts.remove('contact_id')
+		del self.contacts['contact_id']
 		print 
 		print contact_id
 		print self.contacts
