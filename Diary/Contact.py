@@ -1,5 +1,12 @@
 class Contact:
 
+	contact_id
+	name
+	lastname
+	age
+	contacts
+
+
 	def __init__(self, *att):
 		if len(att) > 0:
 			contact_list = list(att)
@@ -40,15 +47,15 @@ class Contact:
 				print 'The Contact Id {0} named {1}{2} and age{3} is here'.format(contact['contact_id'], contact['name'], contact['lastname'], contact['age'])
 
 
-	def edit(self, contact_id):
-		del self.contacts['contact_id']
+	def edit(self, contact):
+		self.contacts[] = contact
 		print 
 		print contact_id
 		print self.contacts
 
 
 	def delete(self, contact_id):
-		self.contacts.remove('contact_id')
+		del self.contacts['contact_id']
 		print 
 		print contact_id
 		print 
