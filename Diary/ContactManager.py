@@ -35,9 +35,6 @@ class ContactManager:
 					contact[edit_choose] = edit_choose_value
 					self.contacts[idx] = contact
 
-
-					
-			
 			#if contact_id.isdigit() :
 			#	self.contact.edit(contact_id);
 			#else:
