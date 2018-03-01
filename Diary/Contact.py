@@ -4,7 +4,7 @@ class Contact:
 	name = None
 	lastname = None
 	age = None
-	contacts = None
+	contacts = []
 
 
 	def __init__(self, *att):
@@ -40,12 +40,12 @@ class Contact:
 
 
 	def show(self):
-		if self.contacts is not None and len(self.contacts) <=0 :
-			print 'There is not contact to show'
-			
-		else:
+		if self.contacts is not None and len(self.contacts) > 0 :
 			for contact in self.contacts:
 				print 'The Contact Id {0} named {1}{2} and age{3} is here'.format(contact['contact_id'], contact['name'], contact['lastname'], contact['age'])
+		else:
+			print 'There is not contact to show'
+			
 
 
 	def edit(self, contact):
