@@ -40,10 +40,8 @@ class Contact:
 
 
 	def show(self):
-		if self.contacts != None and len(self.contacts) <=0 :
+		if self.contacts is not None and len(self.contacts) <=0 :
 			print 'There is not contact to show'
-
-
 			
 		else:
 			for contact in self.contacts:
