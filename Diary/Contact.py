@@ -15,7 +15,6 @@ class Contact:
 			self.name = contact_list[1]
 			self.lastname = contact_list[2]
 			self.age = contact_list[3]
-			self.contacts = None
 		
 			print 'attributes well setted' 
 
