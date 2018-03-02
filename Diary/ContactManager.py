@@ -26,7 +26,9 @@ class ContactManager:
 			print 'Please type the contact Id That You Would like to edit:'
 			contact_id = raw_input()
 			
+			print 'printing ', contact_id
 			for i, contact in self.contacts:
+				print 'index',i
 				if contact_id == contact.contact_id:
 					print 'What Would you like edit: [name] - [lastname] - [age]'
 					edit_choose = raw_input()
