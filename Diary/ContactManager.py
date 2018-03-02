@@ -27,15 +27,15 @@ class ContactManager:
 			contact_id = raw_input()
 			
 			print 'printing ', contact_id
-			for i, contact in self.contacts:
-				print 'index',i
-				if contact_id == contact.contact_id:
+			for contact in self.contacts:
+				if contact_id == contact['contact_id']:
 					print 'What Would you like edit: [name] - [lastname] - [age]'
 					edit_choose = raw_input()
 					print 'Which the value that you want to add in your ', edit_choose
 					edit_choose_value = raw_input()
 					contact[edit_choose] = edit_choose_value
-					self.contacts[i] = contact
+					#self.contacts[i] = contact
+					self.contact.show()
 
 			#if contact_id.isdigit() :
 			#	self.contact.edit(contact_id);
