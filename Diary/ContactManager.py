@@ -1,4 +1,5 @@
 from Contact import Contact
+from EditContact import EditContact
 from ContactException import ContactException
 
 class ContactManager:
@@ -22,25 +23,25 @@ class ContactManager:
 
 
 	def edit_contact(self):
+		
 		try :
+			edit_contact = EditContact()
 			print 'Please type the contact Id That You Would like to edit:'
 			contact_id = raw_input()
-			
-			print 'printing id: ', contact_id
-			for contact in self.contacts:
-				if contact_id == contact['contact_id']:
-					print 'What Would you like edit: [name] - [lastname] - [age]'
-					edit_choose = raw_input()
-					print 'Which the value that you want to add in your ', edit_choose
-					edit_choose_value = raw_input()
-					contact[edit_choose] = edit_choose_value
-					#self.contacts[i] = contact
-					self.contact.show()
+			print 'What Would you like edit: [name] - [lastname] - [age]'
+			edit_attribute = raw_input()
+			print 'Which the value that you want to add in your ', edit_attribute
+			edit_new_value = raw_input()
 
-			#if contact_id.isdigit() :
-			#	self.contact.edit(contact_id);
-			#else:
-			#	print 'Please try to type a number instead'
+			edit_contact.contact_id = contact_id
+			edit_contact.edit_attribute = edit_attribute
+			edit_contact.new_value = edit_new_value
+
+			print 'printing edit_contact before call edit in contact'
+			print edit_contact
+
+			self.contact.edit(edit_contact)
+			self.contact.show()
 
 		except Exception as e:
 			raise ContactException 

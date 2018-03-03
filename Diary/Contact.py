@@ -1,3 +1,5 @@
+from EditContact import EditContact
+
 class Contact:
 
 	contact_id = None
@@ -41,17 +43,22 @@ class Contact:
 	def show(self):
 		if self.contacts is not None and len(self.contacts) > 0 :
 			for contact in self.contacts:
-				print 'The Contact Id {0} named {1}{2} and age{3} is here'.format(contact['contact_id'], contact['name'], contact['lastname'], contact['age'])
+				print 'The Contact Id {0} named {1} {2} and age {3} is here'.format(contact['contact_id'], contact['name'], contact['lastname'], contact['age'])
 		else:
 			print 'There is not contact to show'
 			
 
 
-	def edit(self, contact):
+	def edit(self, edit_contact):
 		#self.contacts[] = contact
+		print 'edit contact: ', edit_contact
 		print 
 		print contact_id
 		print self.contact_list
+
+		for contact in self.contacts:
+			if contact_id == edit_contact.contact_id :
+				contact[edit_contact.edit_attribute] = new_value
 
 
 	def delete(self, contact_id):
