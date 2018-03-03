@@ -1,4 +1,4 @@
 class EditContact:
-	contact_id
-	edit_attribute
-	new_value
+	contact_id = None
+	edit_attribute = None
+	new_value = None
