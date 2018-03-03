@@ -26,7 +26,7 @@ class ContactManager:
 			print 'Please type the contact Id That You Would like to edit:'
 			contact_id = raw_input()
 			
-			print 'printing ', contact_id
+			print 'printing id: ', contact_id
 			for contact in self.contacts:
 				if contact_id == contact['contact_id']:
 					print 'What Would you like edit: [name] - [lastname] - [age]'
@@ -42,8 +42,6 @@ class ContactManager:
 			#else:
 			#	print 'Please try to type a number instead'
 
-		except ContactException as ex:
-			raise ContactException
 		except Exception as e:
 			raise ContactException 
 		
