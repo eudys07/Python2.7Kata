@@ -7,6 +7,7 @@ class ContactManager:
 
 	def __init__(self):
 		self.contact = Contact()
+		self.edit_contact = EditContact()
 
 
 	def show_contacts(self):
@@ -25,26 +26,31 @@ class ContactManager:
 	def edit_contact(self):
 		
 		try :
-			edit_contact = EditContact()
-			print 'Please type the contact Id That You Would like to edit:'
-			contact_id = raw_input()
-			print 'What Would you like edit: [name] - [lastname] - [age]'
-			edit_attribute = raw_input()
-			print 'Which the value that you want to add in your ', edit_attribute
-			edit_new_value = raw_input()
+			if self.contact.contactsListHasValue() is not True :
+				print 'No contact has been added yet. Would you like to add one?'
+				print 'type [yes] to add otherwise press any key'
+				answer = raw_input()
+				if answer == 'yes':
+					self.add_contact()
+				else:
+					self.show_menu()
 
-			edit_contact.contact_id = contact_id
-			edit_contact.edit_attribute = edit_attribute
-			edit_contact.new_value = edit_new_value
+			
+			print 'Please type the contact Id That You Would like to edit:'
+			self.edit_contact.contact_id = raw_input()
+			print 'What Would you like edit: [name] - [lastname] - [age]'
+			self.edit_contact.edit_attribute = raw_input()
+			print 'Which the value that you want to add in your ', self.edit_contact.edit_attribute
+			self.edit_contact.new_value = raw_input()
 
 			print 'printing edit_contact before call edit in contact'
 			print edit_contact
 
-			self.contact.edit(edit_contact)
+			self.contact.edit(self.edit_contact)
 			self.contact.show()
 
 		except Exception as e:
-			raise ContactException 
+			raise ContactException(e)
 		
 
 	def delete_contact(self):
