@@ -43,11 +43,16 @@ class ContactManager:
 			print 'Which the value that you want to add in your ', self.contact_edit.edit_attribute
 			self.contact_edit.new_value = raw_input()
 
+			print 'contact id in edit ', self.contact_edit.contact_id
+			#self.contact_edit.contact_id = contact_edit_id
+
 			print 'printing contact_edit before call edit in contact'
 			print self.contact_edit
 
 			self.contact.edit(self.contact_edit)
-			self.contact.show()
+			print 
+			print 
+			self.show_menu()
 
 		except Exception as e:
 			raise ContactException(e)
@@ -65,7 +70,7 @@ class ContactManager:
 	def ask_contact_info(self):		
 		print 'Please type your ID: '
 		contact_id = raw_input()
-		print 'Please type your name: '
+		print 'Please type your name: '	
 		name = raw_input()
 		print 'Please type your lastname: '
 		lastname = raw_input()

@@ -53,13 +53,16 @@ class Contact:
 		#self.contacts[] = contact
 		print 'edit contact: ', edit_contact
 		print 
-		print contact_id
-		print self.contact_list
+		print edit_contact.contact_id		
+		print self.contacts
 
 		for contact in self.contacts:
-			if contact_id == edit_contact.contact_id :
-				contact[edit_contact.edit_attribute] = new_value
+			if contact['contact_id'] == edit_contact.contact_id :
+				print 'printing the contact in contact:', contact
+				print 'printing contact id:', contact['contact_id']
+				contact[edit_contact.edit_attribute] = edit_contact.new_value
 
+		print self.contacts
 
 	def delete(self, contact_id):
 		del self.contacts['contact_id']
