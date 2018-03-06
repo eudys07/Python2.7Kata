@@ -8,7 +8,7 @@ class ContactManager:
 	def __init__(self):
 		self.contact = Contact()
 		self.contact_edit = EditContact()
-		
+
 
 	def is_not_contacts_empty(self):
 		return self.contact.contactsListHasValue()
@@ -35,16 +35,6 @@ class ContactManager:
 		self.contact_edit.edit_attribute = raw_input()
 		print 'Which the value that you want to add in your ', self.contact_edit.edit_attribute
 		self.contact_edit.new_value = raw_input()
-
-
-	def edit_contact(self):		
-	
-		self.suggest_add_contact_if_empty()
-		self.fill_edit_info()
-		self.contact.edit(self.contact_edit)
-		print 
-		print 
-		self.show_menu()
 		
 
 	def delete_contact(self):
@@ -56,15 +46,25 @@ class ContactManager:
 			print 'Please try to type a number instead'
 
 
-	def show_contacts(self):
-		self.contact.show()
-		print
+	def edit_contact(self):		
+	
+		self.suggest_add_contact_if_empty()
+		self.fill_edit_info()
+		self.contact.edit(self.contact_edit)
+		print 
+		print 
 		self.show_menu()
 
 
 	def add_contact(self):
 		self.ask_contact_info()
 		self.contact.add()
+		print
+		self.show_menu()
+
+
+	def show_contacts(self):
+		self.contact.show()
 		print
 		self.show_menu()
 
