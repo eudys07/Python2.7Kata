@@ -55,11 +55,15 @@ class Contact:
 
 
 	def delete(self, contact_id):
-		del self.contacts['contact_id']
-		print 
-		print contact_id
-		print 
-		print contact
+
+		del self.contacts[contact_id]
+
+
+	def get_contact_by_id(self, contact_id):
+		
+		for contact in self.contacts:
+			if contact['contact_id'] == contact_id:
+				return contact
 
 
 	def getContatcSize(self):

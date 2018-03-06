@@ -17,15 +17,15 @@ class ContactManager:
 	def suggest_add_contact_if_empty(self):
 		if self.is_not_contacts_empty():
 			print 'No contact has been added yet. Would you like to add one?'
-				print 'type [yes] to add otherwise press any key'
-				answer = raw_input()
-				if answer == 'yes':
-					self.add_contact()
-				else:
-					print 'contact list is empty'
-					print
-					print
-					self.show_menu()
+			print 'type [yes] to add otherwise press any key'
+			answer = raw_input()
+			if answer == 'yes':
+				self.add_contact()
+			else:
+				print 'contact list is empty'
+				print
+				print
+				self.show_menu()
 
 
 	def fill_edit_info(self):
@@ -35,13 +35,25 @@ class ContactManager:
 		self.contact_edit.edit_attribute = raw_input()
 		print 'Which the value that you want to add in your ', self.contact_edit.edit_attribute
 		self.contact_edit.new_value = raw_input()
+
 		
+	def validate_contact_id(self, contact_id):
+		
+		is_valid = False
+		if contact_id.isdigit():
+			if self.contact.get_contact_by_id(contact_id) is not None:
+				is_valid = not is_valid
+
+		return is_valid
+
 
 	def delete_contact(self):
+
 		print 'Please type the contact Id That You Would like to delete:'
 		contact_id = raw_input()
-		if contact_id.isdigit() :
+		if self.validate_contact_id(contact_id):
 			self.contact.delete(contact_id);
+		
 		else:
 			print 'Please try to type a number instead'
 
@@ -50,6 +62,7 @@ class ContactManager:
 	
 		self.suggest_add_contact_if_empty()
 		self.fill_edit_info()
+		self.validate_contact_id(self.contact_edit.contact_id)
 		self.contact.edit(self.contact_edit)
 		print 
 		print 
@@ -86,7 +99,6 @@ class ContactManager:
 			raise ContactException(e)
 		
 
-
 	def show_menu(self):
 		print "----------------------------------------------"
 		print "--------------MAIN MENU-----------------------"
@@ -98,5 +110,5 @@ class ContactManager:
 		print "----------------------------------------------"
 		print ">>Please choose your options"
 		print "----------------------------------------------"
-		select_menu_option()
+		self.select_menu_option()
 
