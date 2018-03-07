@@ -18,15 +18,8 @@ class Contact:
 			self.lastname = contact_list[2]
 			self.age = contact_list[3]
 		
-			print 'attributes well setted' 
 
-
-	def add(self):		
-		print 'attributes'
-		print self.contact_id
-		print self.name
-		print self.lastname
-		print self.age
+	def add(self):
 		contact = {
 			'contact_id': self.contact_id,
 			'name': self.name,
@@ -34,8 +27,6 @@ class Contact:
 			'age': self.age
 		}
 
-		print 'Printing contact dict'
-		print contact
 		self.contacts.append(contact)
 
 

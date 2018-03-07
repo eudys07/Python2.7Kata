@@ -14,6 +14,19 @@ class ContactManager:
 		return self.contact.contacts_list_has_value()
 
 
+	def ask_contact_info(self):		
+-		print 'Please type your ID: '
+-		contact_id = raw_input()
+-		print 'Please type your name: '	
+-		name = raw_input()
+-		print 'Please type your lastname: '
+-		lastname = raw_input()
+-		print 'Please type your age: '
+-		age = raw_input()
+		#print 'Full name:{0} {1} and age: {2}'.format(contact_id, name, lastname, age)
+		self.contact = Contact(contact_id, name, lastname, age)
+
+
 	def suggest_add_contact_if_empty(self):
 		if self.contacts_has_value() is not True:
 			print 'No contact has been added yet. Would you like to add one?'
@@ -110,6 +123,6 @@ class ContactManager:
 		print "----------------------------------------------"
 		print ">>Please choose your options"
 		print "----------------------------------------------"
-		
+
 		self.select_menu_option()
 
