@@ -10,12 +10,12 @@ class ContactManager:
 		self.contact_edit = EditContact()
 
 
-	def is_not_contacts_empty(self):
-		return self.contact.contactsListHasValue()
+	def contacts_has_value(self):
+		return self.contact.contacts_list_has_value()
 
 
 	def suggest_add_contact_if_empty(self):
-		if self.is_not_contacts_empty():
+		if self.contacts_has_value() is not True:
 			print 'No contact has been added yet. Would you like to add one?'
 			print 'type [yes] to add otherwise press any key'
 			answer = raw_input()

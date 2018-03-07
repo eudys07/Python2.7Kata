@@ -40,7 +40,7 @@ class Contact:
 
 
 	def show(self):
-		if self.contactsListHasValue() :
+		if self.contacts_list_has_value() :
 			for contact in self.contacts:
 				print 'The Contact Id {0} named {1} {2} and age {3} '.format(contact['contact_id'], contact['name'], contact['lastname'], contact['age'])
 		else:
@@ -66,9 +66,9 @@ class Contact:
 				return contact
 
 
-	def getContatcSize(self):
+	def get_contact_size(self):
 		return len(self.contacts)
 
 
-	def contactsListHasValue(self):
-		return self.contacts is not None and self.getContatcSize() > 0
+	def contacts_list_has_value(self):
+		return self.contacts is not None and self.get_contact_size() > 0
