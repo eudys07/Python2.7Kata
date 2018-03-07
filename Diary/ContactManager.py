@@ -110,5 +110,6 @@ class ContactManager:
 		print "----------------------------------------------"
 		print ">>Please choose your options"
 		print "----------------------------------------------"
+		
 		self.select_menu_option()
 
