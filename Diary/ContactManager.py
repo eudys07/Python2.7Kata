@@ -23,7 +23,6 @@ class ContactManager:
 		lastname = raw_input()
 		print 'Please type your age: '
 		age = raw_input()
-		#print 'Full name:{0} {1} and age: {2}'.format(contact_id, name, lastname, age)
 		self.contact = Contact(contact_id, name, lastname, age)
 
 
@@ -68,7 +67,7 @@ class ContactManager:
 			self.contact.delete(contact_id);		
 		else:
 			print 'Please try to type a number instead'
-			
+
 		print 
 		print 
 		self.show_menu()
