@@ -15,14 +15,14 @@ class ContactManager:
 
 
 	def ask_contact_info(self):		
--		print 'Please type your ID: '
--		contact_id = raw_input()
--		print 'Please type your name: '	
--		name = raw_input()
--		print 'Please type your lastname: '
--		lastname = raw_input()
--		print 'Please type your age: '
--		age = raw_input()
+		print 'Please type your ID: '
+		contact_id = raw_input()
+		print 'Please type your name: '	
+		name = raw_input()
+		print 'Please type your lastname: '
+		lastname = raw_input()
+		print 'Please type your age: '
+		age = raw_input()
 		#print 'Full name:{0} {1} and age: {2}'.format(contact_id, name, lastname, age)
 		self.contact = Contact(contact_id, name, lastname, age)
 
