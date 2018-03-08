@@ -46,9 +46,10 @@ class Contact:
 
 
 	def delete(self, contact_id):
-
-		del self.contacts[contact_id]
-
+		for index, contact in enumerate(self.contacts):
+			if contact['contact_id'] == contact_id:
+				del self.contacts[index]
+		
 
 	def get_contact_by_id(self, contact_id):
 		

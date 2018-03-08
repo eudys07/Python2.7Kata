@@ -65,11 +65,13 @@ class ContactManager:
 		print 'Please type the contact Id That You Would like to delete:'
 		contact_id = raw_input()
 		if self.validate_contact_id(contact_id):
-			self.contact.delete(contact_id);
-		
+			self.contact.delete(contact_id);		
 		else:
 			print 'Please try to type a number instead'
-
+			
+		print 
+		print 
+		self.show_menu()
 
 	def edit_contact(self):		
 	
