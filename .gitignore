@@ -9,4 +9,5 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
+*.txt
 env/
