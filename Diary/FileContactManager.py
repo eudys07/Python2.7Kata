@@ -4,9 +4,13 @@ class FileContactManager:
 	file_name='contact.txt'
 
 	def add(self, contact):
+		file = open(file_name, 'a+')
 
 	def read_all(self):
+		file = open(file_name, 'r+')
 
 	def read(self, contact_id):
+		file = open(file_name, 'r+')
 
 	def delete(self, contact_id):
+		file = open(file_name, 'w+')
