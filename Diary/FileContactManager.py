@@ -1,9 +1,9 @@
-from Contact import Contact
+#from Contact import Contact
 
 class FileContactManager:
 
 	FILE_NAME ='contact.txt'
-	
+
 
 	def add(self, contact):
 		file = open(file_name, 'a+')

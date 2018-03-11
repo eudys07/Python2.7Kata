@@ -1,6 +1,7 @@
 from EditContact import EditContact
+from FileContactManager import FileContactManager as file_contact
 
-class Contact(PersistenFileManager):
+class Contact:
 
 	contact_id = None
 	name = None
