@@ -1,6 +1,6 @@
-from Contact import Contact
-from EditContact import EditContact
-from ContactException import ContactException
+from Entity.Contact import Contact
+from Entity.EditContact import EditContact
+from Exceptions.ContactException import ContactException
 
 class ContactManager:
 

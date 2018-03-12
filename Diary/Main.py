@@ -1,4 +1,4 @@
-from ContactManager import ContactManager 
+from Manager.ContactManager import ContactManager 
 
 
 if __name__== "__main__":	 
