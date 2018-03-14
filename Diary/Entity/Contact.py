@@ -1,4 +1,5 @@
 from EditContact import EditContact
+from Manager.FileContactManager import FileContactManager
 
 class Contact:
 

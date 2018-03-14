@@ -125,8 +125,5 @@ class ContactManager:
 		print ">>Please choose your options"
 		print "----------------------------------------------"
 
-		file_name = 'contacts.txt'
-		file = open(file_name, 'a+')
-
 		self.select_menu_option()
 

@@ -1,4 +1,4 @@
-from Contact import Contact
+#from Entity.Contact import Contact
 
 class FileContactManager:
 
