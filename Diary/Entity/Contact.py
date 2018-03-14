@@ -28,7 +28,7 @@ class Contact:
 			'lastname': self.lastname,
 			'age': self.age
 		}
-
+		self.file_contact.add(contact)
 		self.contacts.append(contact)
 
 

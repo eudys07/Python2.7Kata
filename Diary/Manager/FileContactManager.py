@@ -2,25 +2,30 @@
 
 class FileContactManager:
 
-	file_name='contact.txt'
+	FILE_NAME='contact.txt'
 
 
 	def add(self, contact):
-		file = open(file_name, 'a+')
-		f.write('python rules')
-		f.close()
+		print contact
+		file = open(self.FILE_NAME, 'a+')
+
+		file.write('\n')
+		file.write('python test')
+		file.write('\n')
+		file.write('python test')
+		file.close()
 
 
 	def read_all(self):
-		file = open(file_name, 'r+')
-		f.close()
+		file = open(self.FILE_NAME, 'r+')
+		file.close()
 
 
 	def read(self, contact_id):
-		file = open(file_name, 'r+')
-		f.close()
+		file = open(self.FILE_NAME, 'r+')
+		file.close()
 
 
 	def delete(self, contact_id):
-		file = open(file_name, 'w+')
-		f.close()
+		file = open(self.FILE_NAME, 'w+')
+		file.close()
