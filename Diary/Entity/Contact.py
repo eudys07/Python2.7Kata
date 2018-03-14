@@ -1,5 +1,5 @@
 from EditContact import EditContact
-from Manager.FileContactManager import FileContactManager
+from Manager.FileContactManager import FileContactManager as file_contact
 
 class Contact:
 
@@ -8,6 +8,7 @@ class Contact:
 	lastname = None
 	age = None
 	contacts = []
+	file_contact =  file_contact()
 
 
 	def __init__(self, *att):
