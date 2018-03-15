@@ -13,6 +13,7 @@ class FileContactManager:
 		file.write('python test')
 		file.write('\n')
 		file.write('python test')
+		file.write(str(contact))
 		file.close()
 
 
