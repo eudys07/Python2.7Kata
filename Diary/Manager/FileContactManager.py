@@ -1,4 +1,4 @@
-#from Entity.Contact import Contact
+import json
 
 class FileContactManager:
 
@@ -10,7 +10,7 @@ class FileContactManager:
 		file = open(self.FILE_NAME, 'a+')
 		file.write('\n')
 		print 'python test'
-		file.write(str(contact))
+		file.write(json.dumps(contact))
 		file.close()
 
 
