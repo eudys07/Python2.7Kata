@@ -8,18 +8,17 @@ class FileContactManager:
 	def add(self, contact):
 		print contact
 		file = open(self.FILE_NAME, 'a+')
-
 		file.write('\n')
-		file.write('python test')
-		file.write('\n')
-		file.write('python test')
+		print 'python test'
 		file.write(str(contact))
 		file.close()
 
 
 	def read_all(self):
 		file = open(self.FILE_NAME, 'r+')
+		contacts = file.read()
 		file.close()
+		return contacts
 
 
 	def read(self, contact_id):
