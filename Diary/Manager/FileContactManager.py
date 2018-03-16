@@ -7,10 +7,13 @@ class FileContactManager:
 
 	def add(self, contact):
 		print contact
+		contacts = self.read_all()
+		print 'loading contact'
+		print contacts
 		file = open(self.FILE_NAME, 'a+')
-		file.write('\n')
 		print 'python test'
-		file.write(json.dumps(contact))
+		contact_to_write = file.write(json.dumps(contact))
+		contacts.append(contact_to_write)
 		file.close()
 
 
