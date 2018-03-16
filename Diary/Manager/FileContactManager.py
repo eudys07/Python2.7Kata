@@ -16,7 +16,8 @@ class FileContactManager:
 
 	def read_all(self):
 		file = open(self.FILE_NAME, 'r+')
-		contacts = file.read()
+		contacts =  json.loads(file.read())
+		print contacts
 		file.close()
 		return contacts
 
