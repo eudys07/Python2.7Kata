@@ -26,7 +26,6 @@ class ContactManager:
 		self.contact = Contact(contact_id, name, lastname, age)
 
 
-
 	def suggest_add_contact_if_empty(self):
 		if self.contacts_has_value() is not True:
 			print 'No contact has been added yet. Would you like to add one?'
