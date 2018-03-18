@@ -34,3 +34,8 @@ class FileContactManager:
 	def delete(self, contact_id):
 		file = open(self.FILE_NAME, 'w+')
 		file.close()
+
+
+	def is_empty_file(self):
+		import os
+		os.stat(self.FILE_NAME).st_size == 0

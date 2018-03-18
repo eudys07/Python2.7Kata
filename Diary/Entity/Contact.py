@@ -66,5 +66,5 @@ class Contact:
 
 
 	def contacts_list_has_value(self):
-		file_contacts = self.file_contact.read_all()
-		return self.contacts is not None and len(file_contacts) > 0
+		# file_contacts = self.file_contact.is_empty_file()
+		return self.file_contact.is_empty_file()
