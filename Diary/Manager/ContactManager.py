@@ -49,7 +49,6 @@ class ContactManager:
 		self.contact_edit.new_value = raw_input()
 
 		
-		
 	def validate_contact_id(self, contact_id):
 		
 		is_valid = False
