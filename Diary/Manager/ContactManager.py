@@ -96,7 +96,7 @@ class ContactManager:
 		self.show_menu()
 
 
-	def select_menu_option(self):
+	def select_menu(self):
 		try :
 			user_choosed = raw_input()		
 
@@ -125,5 +125,5 @@ class ContactManager:
 		print ">>Please choose your options"
 		print "----------------------------------------------"
 
-		self.select_menu_option()
+		self.select_menu()
 
