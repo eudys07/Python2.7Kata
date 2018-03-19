@@ -12,6 +12,7 @@ class FileContactManager:
 			contacts = self.read_all()
 
 		file = open(self.FILE_NAME, 'a+')
+		self.erase_file()
 		contacts.append(contact)
 		file.write(json.dumps(contacts))
 		file.close()
@@ -39,3 +40,7 @@ class FileContactManager:
 	def is_empty_file(self):
 		import os
 		return os.stat(self.FILE_NAME).st_size == 0
+
+
+	def erase_file(self):
+		open(self.FILE_NAME, 'r+').truncate()
