@@ -12,7 +12,7 @@ class FileContactManager:
 			contacts = self.read_all()
 
 		file = open(self.FILE_NAME, 'a+')
-		contacts.append(json.dumps(contact))
+		contacts.append(contact)
 		file.write(json.dumps(contacts))
 		file.close()
 
