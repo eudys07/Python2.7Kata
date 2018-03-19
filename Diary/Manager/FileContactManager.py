@@ -10,10 +10,9 @@ class FileContactManager:
 		contacts = []
 		if not self.is_empty_file():
 			contacts = self.read_all()
-			
+
 		file = open(self.FILE_NAME, 'a+')
-		contact_to_write = json.dumps(contact)
-		contacts.append(contact_to_write)
+		contacts.append(json.dumps(contact))
 		file.write(json.dumps(contacts))
 		file.close()
 
