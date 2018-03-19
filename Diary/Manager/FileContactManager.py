@@ -6,14 +6,15 @@ class FileContactManager:
 
 
 	def add(self, contact):
-		print contact
-		contacts = self.read_all()
-		print 'loading contact'
-		print contacts
+
+		contacts = []
+		if not self.is_empty_file():
+			contacts = self.read_all()
+			
 		file = open(self.FILE_NAME, 'a+')
-		print 'python test'
-		contact_to_write = file.write(json.dumps(contact))
+		contact_to_write = json.dumps(contact)
 		contacts.append(contact_to_write)
+		file.write(json.dumps(contacts))
 		file.close()
 
 
@@ -38,4 +39,4 @@ class FileContactManager:
 
 	def is_empty_file(self):
 		import os
-		os.stat(self.FILE_NAME).st_size == 0
+		return os.stat(self.FILE_NAME).st_size == 0
