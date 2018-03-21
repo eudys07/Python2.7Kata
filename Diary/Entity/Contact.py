@@ -1,5 +1,6 @@
 from EditContact import EditContact
 from Manager.FileContactManager import FileContactManager as file_contact
+import json
 
 class Contact:
 
@@ -34,12 +35,12 @@ class Contact:
 
 	def show(self):
 		if self.contacts_list_has_value() :
-			self.file_contact.read_all()
-			for contact in self.contacts:
+
+			contacts = self.file_contact.read_all()
+
+			for contact in contacts:
 				print 'The Contact Id {0} named {1} {2} and age {3} '.format(contact['contact_id'], contact['name'], contact['lastname'], contact['age'])
-		else:
-			print 'There is not contact to show'
-			
+
 
 	def edit(self, edit_contact):
 
@@ -66,4 +67,4 @@ class Contact:
 
 
 	def contacts_list_has_value(self):
-		return self.file_contact.is_empty_file()
+		return not self.file_contact.is_empty_file()
