@@ -34,10 +34,9 @@ class Contact:
 
 
 	def show(self):
+
 		if self.contacts_list_has_value() :
-
 			contacts = self.file_contact.read_all()
-
 			for contact in contacts:
 				print 'The Contact Id {0} named {1} {2} and age {3} '.format(contact['contact_id'], contact['name'], contact['lastname'], contact['age'])
 
