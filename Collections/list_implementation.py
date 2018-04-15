@@ -2,8 +2,12 @@ x = []
 
 print type(x)
 
+#list concatenation
 x = [1,2,3] + [5,6]
 x += [7,8]
+
+
+#Multiplying
 x = [1,2,3,4] * 2
 
 x.append(5)
