@@ -32,9 +32,19 @@ print 'a: in z: ', a in z
 
 print 'hin' in 'many things in the world'
 
+print 
+print 
+print 
 
 for item in z:
 
 	print item
+	print item['name']
+
+
+for k, v in z.items:
+
+	print k
+	print v
 
 
