@@ -42,16 +42,14 @@ for item in z:
 	print item['name']
 
 
-person = [{'name':'Eudys','lastname':'Bautista','age':'31'}]
-person.append({'name':'Aynel','lastname':'Bautista','age':'28'})
-#person.append({'name':'Eliel','lastname':'Garcia','age':'31'})
-
-print 'people: ', person
-
-
-for k, v in person.items:
-
-	print k
-	print v
+print
+print
+print
+print
+print 'Minimun: ', min(x)
+print 'Maximun: ', max(x)
+print 'Sorting: ', sorted(x)
+print 'Sum: ', sum(x)
+print 'Counting 2: ', x.count(2)
 
 
