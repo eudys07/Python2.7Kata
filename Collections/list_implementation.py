@@ -50,7 +50,19 @@ print 'Minimun: ', min(x)
 print 'Maximun: ', max(x)
 print 'Sorting: ', sorted(x)
 print 'Sum: ', sum(x)
-print 'Counting 2: ', x.count(2)cd
+print 'Counting 2: ', x.count(2)
 
 
 #unpacking
+
+names = ['Eudys','Anderson','Bautista','Soto']
+
+a, b, c, d = names
+
+
+
+print 'unpacking print:'
+print a
+print b
+print c
+print d
