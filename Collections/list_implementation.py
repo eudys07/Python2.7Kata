@@ -50,6 +50,7 @@ print 'Minimun: ', min(x)
 print 'Maximun: ', max(x)
 print 'Sorting: ', sorted(x)
 print 'Sum: ', sum(x)
-print 'Counting 2: ', x.count(2)
+print 'Counting 2: ', x.count(2)cd
 
 
+#unpacking
