@@ -51,18 +51,25 @@ print 'Maximun: ', max(x)
 print 'Sorting: ', sorted(x)
 print 'Sum: ', sum(x)
 print 'Counting 2: ', x.count(2)
-
+print
 
 #unpacking
 
 names = ['Eudys','Anderson','Bautista','Soto']
 
 a, b, c, d = names
+1, 2, 3 = z
 
 
 
-print 'unpacking print:'
+print 'unpacking names print:'
 print a
 print b
 print c
 print d
+print 
+
+print 'unpacking z print:'
+print 1
+print 2
+print 3
