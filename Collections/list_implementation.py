@@ -58,7 +58,7 @@ print
 names = ['Eudys','Anderson','Bautista','Soto']
 
 a, b, c, d = names
-1, 2, 3 = z
+obj1, obj2, obj3 = z
 
 
 
@@ -70,6 +70,6 @@ print d
 print 
 
 print 'unpacking z print:'
-print 1
-print 2
-print 3
+print obj1
+print obj2
+print obj3
