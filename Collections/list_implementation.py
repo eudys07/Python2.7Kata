@@ -3,7 +3,7 @@ x = []
 print type(x)
 
 #list concatenation
-y = [1,2,3] + [5,6]
+y = [1,2,3] + [4,5,6]
 y += [7,8]
 
 
@@ -73,3 +73,7 @@ print 'unpacking z print:'
 print obj1
 print obj2
 print obj3
+
+
+
+
