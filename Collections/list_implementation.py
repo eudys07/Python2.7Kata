@@ -79,4 +79,7 @@ print obj3
 x = [m for m in range(10)]
 print x
 
+y = [m for m in range(20) if m%2]
+print y
+
 
