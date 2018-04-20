@@ -75,5 +75,8 @@ print obj2
 print obj3
 
 
+#list Comprehension
+x = [m for m in range(10)]
+print x
 
 
