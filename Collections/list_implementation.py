@@ -74,7 +74,8 @@ print obj1
 print obj2
 print obj3
 
-
+print
+print 'List Comprehension'
 #list Comprehension
 x = [m for m in range(10)]
 print x
@@ -82,4 +83,8 @@ print x
 y = [m for m in range(20) if m%2]
 print y
 
-
+print 'this is z: ', z
+del(z[0])
+print 'this is now z: ', z
+print
+print 'printign 0 index in z: ', z[0]
