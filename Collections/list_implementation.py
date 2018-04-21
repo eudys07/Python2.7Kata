@@ -88,3 +88,9 @@ del(z[0])
 print 'this is now z: ', z
 print
 print 'printign 0 index in z: ', z[0]
+print 'deleting z'
+#del(z)
+print
+print
+print 'this is now z: '
+print z
