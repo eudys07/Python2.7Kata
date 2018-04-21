@@ -94,3 +94,16 @@ print
 print
 print 'this is now z: '
 print z
+
+print
+print
+hangar1 = [1,2,3,4]
+hangar2 = [7,8,9]
+
+print
+print 'hangar1: ', hangar1
+print 'hangar2: ', hangar2
+print 
+print 'Extending hangar2'
+hangar1.extend(hangar2);
+print 'hangar1 extend from hangar2: ', hangar1
