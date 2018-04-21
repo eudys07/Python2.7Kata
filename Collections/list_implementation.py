@@ -104,6 +104,16 @@ print
 print 'hangar1: ', hangar1
 print 'hangar2: ', hangar2
 print 
+print 'Inserting a 5 in the index 0 in hangar2'
+hangar2.insert(0,5)
+print 'hangar2: ', hangar2
+print 
+print 'Inserting a 6 in the index 1 in hangar2'
+hangar2.insert(1,6)
+print 'hangar2: ', hangar2
+print 
+print 
+print 
 print 'Extending hangar2'
 hangar1.extend(hangar2);
 print 'hangar1 extend from hangar2: ', hangar1
