@@ -47,4 +47,24 @@ print 'modifiying a list inside a tuple'
 print
 print 'tuple3'
 print tuple3
+print 
+
+print 'Inserting value in list inside of tuple3' 
+tuple3[1].insert(3,'d')
+tuple3[1].insert(4,'e')
+print 'tuple3'
+print tuple3
+print
+
+print 'modifiying the position 4 in the list inside of tuple3'
+tuple3[1][4] = 'work'
+print 'tuple3'
+print tuple3
+print
+
+print 'deleting popsition 4 from the list inside of tuple3'
+del(tuple3[1][4])
+print 'tuple3'
+print tuple3
+
 
