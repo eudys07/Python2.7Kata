@@ -20,3 +20,7 @@ print set1
 print 'set2'
 print set2
 
+set3 = {m for m in range(50) if m%2}
+print
+print 'set3'
+print set3
