@@ -41,9 +41,9 @@ print 'asking for tuple2 after deleting:    NameError: name tuple2 is not define
 #tuple2
 
 print
-print
+print 
 tuple3 = 1,['a','b','c'], 3, 4,
-print 'modifiying a list inside a tuple'
+print 'modifiying a list inside a tuple: without eror due to the list is mutable'
 print
 print 'tuple3'
 print tuple3
