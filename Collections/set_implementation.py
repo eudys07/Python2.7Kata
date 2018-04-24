@@ -30,5 +30,22 @@ print 'len(set3)'
 print len(set3)
 
 print 
-print 'pop(set3)'
-print pop(set3)
+print 'set3.pop()'
+print set3.pop()
+print
+print 'set3'
+print set3
+print 
+print 'set3.pop() again'
+print set3.pop()
+print
+print 'set3'
+print set3
+
+print
+print 'Checking membership'
+print '5 in set3'
+print 5 in set3
+print
+print '4 in set3'
+print 4 in set3
