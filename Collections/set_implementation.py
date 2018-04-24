@@ -49,3 +49,12 @@ print 5 in set3
 print
 print '4 in set3'
 print 4 in set3
+
+print
+print 'removing item'
+print 'existing item: set.remove(5)'
+print set3.remove(5)
+print
+print 'not existing item: set.remove(4): KeyError: 4'
+#print set3.remove(4)
+
