@@ -58,3 +58,16 @@ print
 print 'not existing item: set.remove(4): KeyError: 4'
 #print set3.remove(4)
 
+
+print
+print 'Adding item to set'
+print 'same type: set3.add(4)'
+print set3.add(4)
+print
+a = 'Work'
+print "a = 'Work'"
+print 'different type: set3.add(a)'
+print set3.add(a)
+print
+print 'set3'
+print set3
