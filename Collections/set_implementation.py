@@ -24,3 +24,11 @@ set3 = {m for m in range(50) if m%2}
 print
 print 'set3'
 print set3
+
+print 
+print 'len(set3)'
+print len(set3)
+
+print 
+print 'pop(set3)'
+print pop(set3)
