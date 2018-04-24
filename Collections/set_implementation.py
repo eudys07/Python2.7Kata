@@ -69,5 +69,9 @@ print "a = 'Work'"
 print 'different type: set3.add(a)'
 print set3.add(a)
 print
+print 'Clearing the set'
+print 'set3.clear()'
+print set3.clear()
+print
 print 'set3'
 print set3
