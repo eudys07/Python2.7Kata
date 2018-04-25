@@ -75,3 +75,47 @@ print set3.clear()
 print
 print 'set3'
 print set3
+
+print
+print
+print 'STANDARD MATHEMATICAL SET OPERATION'
+print 
+print 'For this let going to create 3 new sets: math_set1, math_set2 and math_set3, math_set4 '
+math_set1 = {1,2,3,4,5}
+math_set2 = math_set1
+math_set3 = {'one', 'two', 'Theree'}
+math_set4 = {'one',1, 2,'two',3, 'Theree'}
+print 
+print 'math_set1'
+print math_set1
+print 'math_set2'
+print math_set2
+print 'math_set3'
+print math_set3
+print 'math_set4'
+print math_set4
+print 
+print "Insertion '&'"
+print 'math_set1 & math_set2'
+print math_set1 & math_set2
+print
+print 'math_set1 & math_set3'
+print math_set1 & math_set3
+print
+print 'math_set1 & math_set4'
+print math_set1 & math_set4
+print
+print 'math_set3 & math_set4'
+print math_set3 & math_set4
+
+print
+print 'set3'
+print set3
+
+print
+print 'set3'
+print set3
+
+print
+print 'set3'
+print set3
