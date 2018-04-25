@@ -97,7 +97,8 @@ print math_set4
 
 print 
 print 
-print "Insertion '&'"
+print '------------------------------------------'
+print "Insertion(AND) '&'"
 print 'math_set1 & math_set2'
 print math_set1 & math_set2
 print
@@ -112,18 +113,60 @@ print math_set3 & math_set4
 
 print 
 print 
-print "Union '|'"
+print '------------------------------------------'
+print "Union(OR) '|'"
 print 'math_set1 | math_set2'
-print math_set1 & math_set2
+print math_set1 | math_set2
 print
 print 'math_set1 | math_set3'
-print math_set1 & math_set3
+print math_set1 | math_set3
 print
 print 'math_set1 | math_set4'
-print math_set1 & math_set4
+print math_set1 | math_set4
 print
 print 'math_set3 | math_set4'
-print math_set3 & math_set4
+print math_set3 | math_set4
+
+print 
+print 
+print '------------------------------------------'
+print "Symmetric difference(XOR) '^'"
+print 'math_set1 ^ math_set2'
+print math_set1 ^ math_set2
+print
+print 'math_set1 ^ math_set3'
+print math_set1 ^ math_set3
+print
+print 'math_set1 ^ math_set4'
+print math_set1 ^ math_set4
+print
+print 'math_set3 ^ math_set4'
+print math_set3 ^ math_set4
+
+print 
+print 
+print '------------------------------------------'
+print "Difference '-'"
+print 'math_set1 - math_set2: in math_set1 but not in math_set2'
+print math_set1 - math_set2
+print
+print 'math_set1 - math_set3: in math_set1 but not in math_set3'
+print math_set1 - math_set3
+print
+print 'math_set3 - math_set1: in math_set3 but not in math_set1'
+print math_set3 - math_set1
+print
+print 'math_set1 - math_set4: in math_set1 but not in math_set4'
+print math_set1 - math_set4
+print
+print 'math_set4 - math_set1: in math_set4 but not in math_set1'
+print math_set4 - math_set1
+print
+print 'math_set3 - math_set4: in math_set3 but not in math_set4'
+print math_set3 - math_set4
+print
+print 'math_set4 - math_set3: in math_set4 but not in math_set3'
+print math_set4 - math_set3
 
 
 
