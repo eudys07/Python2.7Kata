@@ -94,6 +94,8 @@ print 'math_set3'
 print math_set3
 print 'math_set4'
 print math_set4
+
+print 
 print 
 print "Insertion '&'"
 print 'math_set1 & math_set2'
@@ -108,14 +110,20 @@ print
 print 'math_set3 & math_set4'
 print math_set3 & math_set4
 
+print 
+print 
+print "Union '|'"
+print 'math_set1 | math_set2'
+print math_set1 & math_set2
 print
-print 'set3'
-print set3
+print 'math_set1 | math_set3'
+print math_set1 & math_set3
+print
+print 'math_set1 | math_set4'
+print math_set1 & math_set4
+print
+print 'math_set3 | math_set4'
+print math_set3 & math_set4
 
-print
-print 'set3'
-print set3
 
-print
-print 'set3'
-print set3
+
