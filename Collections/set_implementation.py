@@ -167,6 +167,41 @@ print math_set3 - math_set4
 print
 print 'math_set4 - math_set3: in math_set4 but not in math_set3'
 print math_set4 - math_set3
+print
+print
+
+print '------------------------------------------'
+print "Subset '<='"
+print 'math_set1 <= math_set2'
+print math_set1 <= math_set2
+print
+print 'math_set1 <= math_set3'
+print math_set1 <= math_set3
+print
+print 'math_set1 <= math_set4'
+print math_set1 <= math_set4
+print
+print 'math_set3 <= math_set4'
+print math_set3 <= math_set4
+print
+print
+
+print '------------------------------------------'
+print "Superset '>=' "
+print 'math_set1 >= math_set2'
+print math_set1 >= math_set2
+print
+print 'math_set1 >= math_set3'
+print math_set1 >= math_set3
+print
+print 'math_set1 >= math_set4'
+print math_set1 >= math_set4
+print
+print 'math_set3 >= math_set4'
+print math_set3 >= math_set4
+
+
+
 
 
 
