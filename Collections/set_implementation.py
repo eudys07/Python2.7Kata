@@ -189,16 +189,16 @@ print
 
 print '------------------------------------------'
 print "Superset '>=' "
-print 'math_set1 >= math_set2:'
+print 'math_set1 >= math_set2: math_set1 contains math_set2'
 print math_set1 >= math_set2
 print
-print 'math_set1 >= math_set3'
+print 'math_set1 >= math_set3: math_set1 contains math_set3'
 print math_set1 >= math_set3
 print
-print 'math_set1 >= math_set4'
+print 'math_set1 >= math_set4: math_set1 contains math_set4'
 print math_set1 >= math_set4
 print
-print 'math_set3 >= math_set4'
+print 'math_set3 >= math_set4: math_set3 contains math_set4'
 print math_set3 >= math_set4
 
 
