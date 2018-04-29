@@ -1,6 +1,11 @@
+#Dictionary
+
+print
+print 'Creating new Dictionary'
+print
 dict1 = {'name':'Eudys','lastname':'Bautista','age':'31'}
-dict2 = dict([('name','Eudys'),('lastname','Bautista'),('age','31')])
-dict3 = dict(name='Eudys',lastname='Bautista',age='31')
+dict2 = dict([('name','Aynel'),('lastname','Bautista'),('age','28')])
+dict3 = dict(name='Eliel',lastname='Garcia',age='32')
 
 
 print 'dict1: '
