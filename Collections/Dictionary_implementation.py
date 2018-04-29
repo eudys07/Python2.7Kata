@@ -1,6 +1,6 @@
 dict1 = {'name':'Eudys','lastname':'Bautista','age':'31'}
 dict2 = dict([('name','Eudys'),('lastname','Bautista'),('age','31')])
-dict3 = dict('name'='Eudys','lastname'='Bautista','age'='31')
+dict3 = dict(name='Eudys',lastname='Bautista',age='31')
 
 
 print 'dict1: '
