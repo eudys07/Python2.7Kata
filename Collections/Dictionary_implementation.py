@@ -49,4 +49,9 @@ print ''
 print 'Aynel not in  dict2: ', 'Aynel' not in  dict2
 print
 
-
+print
+print 'clearing dict2'
+print ''
+print 'dict2.clear(): ', dict2.clear()
+print
+print 'dict2: ', dict2
