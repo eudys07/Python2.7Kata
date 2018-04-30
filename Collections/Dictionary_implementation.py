@@ -44,9 +44,9 @@ print
 print
 print 'checking membership in dict2'
 print ''
-print 'Aynel in  dict2: ', 'Aynel' in  dict2
+print '(name, Aynel) in  dict2: ', ('name', 'Aynel') in  dict2
 print ''
-print 'Aynel not in  dict2: ', 'Aynel' not in  dict2
+print '(name, Aynel) not in  dict2: ', ('name', 'Aynel') not in  dict2
 print
 
 print
@@ -64,16 +64,21 @@ print
 print 'ACCESSING KEYS AND VALUES IN A DICT'
 
 print
-print 'Return list of keys in x'
+print 'Return list of keys in dict1'
 print 'dict1.keys(): ', dict1.keys()
 print
 
 print
-print 'Return list of values in x'
+print 'Return list of values in dict1'
 print 'dict1.values(): ', dict1.values()
 print
 
 print
-print 'Return list of key-value tuple pairs in x'
+print 'Return list of key-value tuple pairs in dict1'
 print 'dict1.items(): ', dict1.items()
+print
+
+print
+print 'Checking membership in dict1: '
+print 'Eudys in dict1.values(): ', 'Eudys' in dict1.values()
 print
