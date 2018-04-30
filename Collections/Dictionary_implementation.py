@@ -41,4 +41,12 @@ print ''
 print 'len(dict2): ', len(dict2)
 print
 
+print
+print 'checking membership in dict2'
+print ''
+print 'Aynel in  dict2: ', 'Aynel' in  dict2
+print ''
+print 'Aynel not in  dict2: ', 'Aynel' not in  dict2
+print
+
 
