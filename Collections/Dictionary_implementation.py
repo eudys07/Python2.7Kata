@@ -55,3 +55,20 @@ print ''
 print 'dict2.clear(): ', dict2.clear()
 print
 print 'dict2: ', dict2
+print
+
+
+
+print
+print
+print 'ACCESSING KEYS AND VALUES IN A DICT'
+
+print
+print 'Return list of keys in x'
+print 'dict1.keys(): ', dict1.keys()
+print
+
+print
+print 'Return list of values in x'
+print 'dict1.values(): ', dict1.values()
+print
