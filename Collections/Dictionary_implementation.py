@@ -72,3 +72,8 @@ print
 print 'Return list of values in x'
 print 'dict1.values(): ', dict1.values()
 print
+
+print
+print 'Return list of key-value tuple pairs in x'
+print 'dict1.items(): ', dict1.items()
+print
