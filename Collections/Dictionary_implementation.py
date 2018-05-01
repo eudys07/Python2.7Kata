@@ -57,8 +57,6 @@ print
 print 'dict2: ', dict2
 print
 
-
-
 print
 print
 print 'ACCESSING KEYS AND VALUES IN A DICT'
@@ -81,4 +79,21 @@ print
 print
 print 'Checking membership in dict1: '
 print 'Eudys in dict1.values(): ', 'Eudys' in dict1.values()
+print
+
+print
+print
+print 'ITERATING A DICT'
+
+print
+print 'Iterate keys and print all key-value pairs: '
+for key in dict1:
+	print 'printing key-value: ', (key, dict1[key])
+
+
+print
+print 'Iterate key/value pairs: '
+for key, value in dict1.items():
+	print 'printing key-value: ', (key, value)
+
 print
