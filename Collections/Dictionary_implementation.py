@@ -96,4 +96,4 @@ print 'Iterate key/value pairs: '
 for key, value in dict1.items():
 	print 'printing key-value: ', (key, value)
 
-print
+print  
