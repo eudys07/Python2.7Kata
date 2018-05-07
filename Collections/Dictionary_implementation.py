@@ -76,7 +76,6 @@ print 'Return list of key-value tuple pairs in dict1'
 print 'dict1.items(): ', dict1.items()
 print
 
-
 print
 print 'Checking membership in dict1: '
 print 'Eudys in dict1.values(): ', 'Eudys' in dict1.values()
